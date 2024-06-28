@@ -1,0 +1,236 @@
+.login-bga {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #f7f7f7;
+  overflow: auto;
+
+} 
+
+.login-form-container-forma {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../../public/EmpLogin.jpg");
+  background-size: cover
+}
+
+@media screen and (max-width: 600px) {
+  .login-form-container-forma {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    margin-left: 150px;
+    margin: auto;
+    width: 100vw;
+    background-size: cover;
+  }
+  .company-logoa {
+    border-radius: 10px;
+    width: 300px !important;
+    height: 300px !important;
+    margin-top: 70px;
+    position: relative;
+    
+    animation: pageLogo 2s forwards;
+  }
+  .login-bga {
+    margin-top: 60px;
+  }
+}
+
+.company-logoa {
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+  margin-top: 40px;
+  position: relative;
+  /* margin-left: 250px; */
+  animation: pageLogo 2s forwards;
+}
+
+@keyframes pageLogo {
+  from {
+    right: 300px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .login-form-containera {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.login-website-logo-mobile-imagea {
+  width: 165px;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+@media screen and (min-width: 992px) {
+  .login-website-logo-mobile-imagea {
+    display: none;
+  }
+}
+
+.login-imagea {
+  width: 278px;
+}
+
+@media screen and (min-width: 992px) {
+  .login-imagea {
+    width: 60%;
+    max-width: 524px;
+    flex-shrink: 1;
+    margin-right: 20px;
+  }
+}
+
+.login-website-logo-desktop-imagea {
+  width: 185px;
+}
+
+@media screen and (max-width: 991px) {
+  .login-website-logo-desktop-imagea {
+    display: none;
+  }
+}
+
+.form-containerx {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  height: fit-content !important;
+  max-width: 350px;
+  background-color: #ffffff;
+  position: relative;
+  animation: logForm 2s forwards;
+}
+
+.form-containerx h1 {
+  margin: 0;
+  position: relative;
+}
+
+@keyframes logForm {
+  from {
+    left: 300px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .form-containerx {
+    width: 300px;
+    flex-shrink: 0;
+    box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.08);
+    padding: 64px 48px 64px 48px;
+    margin-top: 40px;
+  }
+}
+
+.input-containera {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 100%;
+  padding-left: 20px;
+}
+.input-container{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+
+  margin-top: 10px;
+  width: 100%;
+
+}
+
+.input-labela {
+  margin-bottom: 0px;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #475569;
+  text-align: start;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.mainPagelogina{
+  color: #475569;
+}
+
+.username-input-fielda {
+  font-size: 14px;
+  height: 30px;
+  border: 1px solid #d7dfe9;
+  background-color: #e2e8f0;
+  color: #64748b;
+  border-radius: 2px;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  outline: none;
+  width: 200px;
+  margin-left: 0px;
+  width: 80%;
+}
+
+.password-input-fielda {
+  font-size: 14px;
+  height: 30px;
+  border: 1px solid #d7dfe9;
+  background-color: #e2e8f0;
+  color: #64748b;
+  border-radius: 2px;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  outline: none;
+  width: 80%;
+  margin-left: 0px;
+}
+
+.login-buttona {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  height: 40px;
+  width: 150px;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  background-color: #0b69ff;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-buttona:hover{
+  background-color: green;
+  cursor: pointer;
+}
+
+.error-message {
+  align-self: start;
+  font-size: 14px !important;
+  margin-bottom: 0px;
+  font-family: "Roboto";
+  color: #ff0b37;
+}
